@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .head{
+          background-image: url("https://media.istockphoto.com/id/1076840920/vector/music-background.jpg?s=612x612&w=0&k=20&c=bMG2SEUYaurIHAjtRbw7bmjLsXyT7iJUvAM5HjL3G3I=");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+         ul{
+            text-decoration: none;
+           text-align: left;
+           justify-content: flex-end;
+            list-style: none;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            display: inline-block;
+            font-size: 20px;
+            margin-left: 3cm;
+            margin-top: 0.5cm;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        li a:hover{
+            background-color:palevioletred;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .image-part5 img{
+            border-radius: 50%;
+            width: 300px;
+            height:300px;
+           margin-left: 14cm;
+           margin-top:1cm;
+        }
+        .image-part1 img{
+            border-radius: 50%;
+            width: 300px;
+            height:300px;
+           margin-left:22cm;
+           margin-top:-12cm;
+        }
+        .image-part2 img{
+            border-radius: 50%;
+            width: 300px;
+            height:300px;
+           margin-left:30cm;
+           margin-top:-12cm;
+        }
+        .image-part3 img{
+            border-radius: 50%;
+            width: 300px;
+            height:300px;
+           margin-left: 27cm;
+           margin-top:-0.5cm;
+           
+        }
+        .image-part4 img{
+            border-radius: 50%;
+            width: 300px;
+            height:300px;
+           margin-left: 18cm;
+           margin-top:-20cm;  
+        }
+          .images img:hover {
+            transform: scale(1.2);
+          }
+        .images img:hover{
+            box-shadow: 0 0 5px black;
+
+        }
+        .music-content h1{
+            color:white;
+            margin-top:-15cm;
+           margin-left:3cm;
+           font-size: 40px;
+        }
+        .music-content p{
+            color:white;
+            margin-left: 3cm;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 30px;
+        }
+        .music-content button{
+            margin-left: 3cm;
+            font-size: 20px;
+            border-radius: 20px;
+            color: white;
+            height: 50px;
+            background-color: blueviolet;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: 1px solid white;
+            width: 8cm;
+        }
+        .music-content button:hover{
+            background-color: palevioletred;
+        }
+        .main{
+           height: 1000px;
+
+        }
+        .main h1{
+            text-align: center;
+            margin-top:8cm;
+            color: white;
+        }
+        .main h2{
+            margin-left:17cm;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .main select{
+            margin-left:17cm;
+            width:350px;
+            height: 40px;
+            font-size: 25px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: lightskyblue;
+        }
+        .main select option{
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 20px;
+        } 
+        .events{
+            display: none;
+        }
+       .image-style{
+            width:500px;
+            height: 500px;
+            text-align: center;
+            margin-left: 12cm;
+            margin-top: 1cm;
+            border-radius: 20%;
+        }
+        .button-style{
+            margin-right: 8cm;
+            font-size: 20px;
+            border-radius: 20px;
+            color: white;
+            height: 50px;
+            background-color: blueviolet;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: 1px solid white;
+            width: 8cm;
+            bottom: 0;
+            position: relative;
+           left: 565px;
+          top: 58px;
+        }
+       .events button:hover{
+            background-color: palevioletred;
+        }
+        .social{
+             margin-left: 5cm;
+             margin-top: 1cm;
+        }
+        .social a{
+            font-size: 30px;
+            color: white;
+            padding: 10px;
+        }
+        .social a:hover{
+            color:blue;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="images">
+    <div class="image-part5">
+        <img src="data:image/jpeg;base64,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">
+    </div>
+    <div class="image-part1">
+        <img src="https://cdn4.vectorstock.com/i/1000x1000/41/33/logo-music-vector-8114133.jpg">
+    </div>
+    <div class="image-part2">
+    <img src="https://media.istockphoto.com/id/1178919830/photo/beautiful-smiling-girl-with-curly-hairstyle.jpg?s=612x612&w=0&k=20&c=Bf5dLvmhZWH_pmNPFP3UO4whfvY2y1uqCYJk3nPsP1M=">
+    </div>
+    <div class="image-part3">
+        <img src="https://media.istockphoto.com/id/138026020/vector/band-time-baby.jpg?s=612x612&w=0&k=20&c=Pp1zzbG1q9o0R5ZNsxcxCN8aWlIG9ACdIAdWPE_XJtg=">
+    </div>
+    <div class="image-part4">
+        <img src="https://tansensuryanagar.in/wp-content/uploads/2021/06/Vocal-Singing-Lessons.jpg">
+    </div>
+    </div>
+    <div class="music-content">
+        <h1>MUSIC EVENTS</h1>
+        <p>Join us for an electrifying <br>
+            music event that promises <br>
+            to be a night filled with rhythm,<br>
+             melodies, and unforgettable performances! <br>
+             We are thrilled to invite you to be a<br>
+              part of this exciting musical extravaganza.</p>
+              <a href="#Register"><button type="submit">Get Started</button></a><br>
+              <div class="social">
+              <a href="https://www.linkedin.com/in/mallikarjuna-gari-poojitha/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/poojithashetty_29/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/poojitha27662" target="_blank">
+                        <i class="fa-brands fa-twitter"></i></a>
+                    </div>
+<div id="Register">
+    <div class="main">
+        <h1>IGNITE YOUR PASSION</h1>
+        <h2>Select an Event to Participate</h2>
+        <select id="select">
+            <option>Select Event</option>
+            <option value="Open Mic Night">Open Mic Night</option>
+            <option value="Battle of the Bands">Battle of the Bands</option>
+            <option value="Violin Solo Recital">Violin Solo Recital</option>
+            <option value="Join the Melody">Join the Melody</option>
+            <option value="Piano Showcas">Piano Showcas</option>
+        </select>
+    <div class="container">
+    </div>
+    </div>
+    <script>
+        const select=document.getElementById("select");
+        const container=document.querySelector(".container");
+        select.addEventListener("change",function(){
+            const SelectedValue=select.options[select.selectedIndex]
+            const event=SelectedValue.value;
+            const image=document.createElement('img');
+            container.innerHTML=event;
+            if(event==="Open Mic Night"){
+            image.src = "https://i0.wp.com/amtlive.org/wp-content/uploads/2016/10/148940-microphone-on-stage.jpg?fit=865%2C577&ssl=1";
+            image.classList.add('image-style');
+            const button=document.createElement('button');
+            button.type='submit';
+            button.innerText = "Register";
+            button.classList.add('button-style');
+            container.appendChild(image);
+            container.appendChild(button);
+            }
+            else if(event==="Battle of the Bands"){
+                image.src = "https://evanstonnow.com/wp-content/uploads/2011/09/battle-of-the-bands-image-1.jpg";
+                image.classList.add('image-style');
+                container.appendChild(image);
+                const button=document.createElement('button');
+            button.type='submit';
+            button.innerText = "Register";
+            button.classList.add('button-style');
+            container.appendChild(image);
+            container.appendChild(button);
+            }
+            else if(event==="Violin Solo Recital"){
+                image.src = "https://img.freepik.com/premium-photo/female-violonist-with-bow-violin-solo-concert-stage-woman-with-string-musical-instrument-musician-play-viola_266732-20620.jpg";
+                image.classList.add('image-style');
+                container.appendChild(image);
+                const button=document.createElement('button');
+            button.type='submit';
+            button.innerText = "Register";
+            button.classList.add('button-style');
+            container.appendChild(image);
+            container.appendChild(button);
+            }
+            else if(event==="Join the Melody"){
+                image.src = "https://axerosolutions.com/assets/Uploaded-CMS-Files/1c3bc747-fef3-4ce9-a3ae-dc94f44fbcb1.jpg";
+                image.classList.add('image-style');
+                container.appendChild(image);
+                const button=document.createElement('button');
+            button.type='submit';
+            button.innerText = "Register";
+            button.classList.add('button-style');
+            container.appendChild(image);
+            container.appendChild(button);
+            }
+            else if(event==="Piano Showcas"){
+                image.src = "https://cdn.eventfinda.co.nz/uploads/events/transformed/1839494-795114-14.jpg?v=2";
+                image.classList.add('image-style');
+                container.appendChild(image);
+                const button=document.createElement('button');
+            button.type='submit';
+            button.innerText = "Register";
+            button.classList.add('button-style');
+            container.appendChild(image);
+            container.appendChild(button);
+            }
+        })
+    </script>
+</body>
+</html>
